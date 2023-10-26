@@ -1,0 +1,427 @@
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.icons{
+  color: blueviolet;
+  margin: 0 10px;
+}
+.icons:hover{
+  color: #ffffff;
+}
+h1{
+  font-size: 35px;
+}
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #ffff;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1b32;/* #f0f0f0;*/
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.image-info {
+  margin-left: 0px;
+  margin-right: 400px ;
+  margin-bottom: 150px;
+}
+
+.image-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+.image-description {
+  font-size: 15px;
+  color: blueviolet;
+  margin-top: 25px;
+}
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  body {
+    background: #1b1b32;
+    color: black;
+    font-family: Helvetica;
+    margin: 0;
+  }
+  /* css for all the pages*/
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+  
+  nav > ul > li {
+    color: #dfdfe2;
+    color: white;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  main {
+    padding-top: 50px;
+  }
+  
+  section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
+  
+  h1,
+  h2 {
+    font-family: Verdana, Tahoma;
+  }
+  
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+  
+  .info {
+    padding: 10px 0 0 5px;
+  }
+  
+  .formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+  }
+  
+  input {
+    font-size: 16px;
+  }
+  
+  .info label, .info input {
+    display: inline-block;
+  }
+  
+  .info input {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .info label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+  }
+  
+  .question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+  }
+  
+  p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  /*
+  p::before {
+    content: "Question #";
+  } puts .question # before every h1 and p tags*/
+  
+  .question {
+    border: none;
+    padding-bottom: 0;
+  }
+  
+  .answers-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid  orange; /* color : #3b3b4f*/
+  }
+    
+  address {
+    text-align: center;
+    padding: 0.3em;
+  }
+  /* contact css 
+  fieldset{
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
+  .fields{
+    margin: 45px 400px 45px 400px;
+  }
+  #first-name{
+    margin: 15px 0px 15px 0px;
+  }
+  #last-name{
+    margin: 5px 0px 5px 0px;
+  }*/
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  a{
+    color: #dfdfe2;
+  }
+  
+
+
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  footer {
+    background-color:#2a2a40;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: blueviolet;
+  }
+  p{
+    color: blueviolet;
+  }
+  .contacts a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: Tahoma;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .contacts a:hoover{
+    color: #fff;
+  }
+  hr{
+    color: #0a0a23;
+
+  }
